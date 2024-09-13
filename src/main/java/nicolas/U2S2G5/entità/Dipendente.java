@@ -3,30 +3,28 @@ package nicolas.U2S2G5.entità;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 import jakarta.persistence.*;
-import nicolas.U2S2G5.enums.StatoViaggio;
-
-import java.time.LocalDate;
 import java.util.List;
 
 @Entity
 @Data
 @NoArgsConstructor
-public class Viaggio {
+public class Dipendente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String destinazione;
+    private String nome;
 
-    @Enumerated(EnumType.STRING)
-    private StatoViaggio stato;
+    private String cognome;
 
-    private LocalDate data;
+    private String email;
 
-    @OneToMany(mappedBy = "viaggio", cascade = CascadeType.ALL)
+    @Lob
+    private byte[] immagineProfilo;
+
+    @OneToMany(mappedBy = "dipendente", cascade = CascadeType.ALL)
     private List<Prenotazione> prenotazioni;
 
 }
