@@ -1,10 +1,7 @@
 package nicolas.U2S2G5.controller;
 
-import nicolas.U2S2G5.playloads.CreateDipendenteDTO;
-import nicolas.U2S2G5.playloads.CreatePrenotazioneDTO;
-import nicolas.U2S2G5.playloads.DipendenteDTO;
-import nicolas.U2S2G5.playloads.PrenotazioneDTO;
-import nicolas.U2S2G5.services.PrenotazioneService;
+import nicolas.U2S2G5.playloads.*;
+import nicolas.U2S2G5.services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

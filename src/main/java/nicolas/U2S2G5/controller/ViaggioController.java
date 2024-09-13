@@ -2,8 +2,7 @@ package nicolas.U2S2G5.controller;
 
 import jakarta.validation.Valid;
 import nicolas.U2S2G5.enums.StatoViaggio;
-import nicolas.U2S2G5.playloads.CreateViaggioDTO;
-import nicolas.U2S2G5.playloads.ViaggioDTO;
+import nicolas.U2S2G5.playloads.*;
 import nicolas.U2S2G5.services.ViaggioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

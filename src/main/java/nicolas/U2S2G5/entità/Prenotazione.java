@@ -1,9 +1,9 @@
 package nicolas.U2S2G5.entità;
 
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity

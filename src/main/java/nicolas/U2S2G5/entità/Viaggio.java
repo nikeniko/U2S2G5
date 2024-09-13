@@ -1,9 +1,8 @@
 package nicolas.U2S2G5.entità;
 
+import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import jakarta.persistence.*;
 import nicolas.U2S2G5.enums.StatoViaggio;
 
 import java.time.LocalDate;
