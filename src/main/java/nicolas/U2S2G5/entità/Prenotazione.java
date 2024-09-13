@@ -18,12 +18,12 @@ public class Prenotazione {
     private LocalDate dataRichiesta;
 
     @ManyToOne
-    @JoinColumn(name = "viaggio_id")
-    private Viaggio viaggio;
-
-    @ManyToOne
     @JoinColumn(name = "dipendente_id")
     private Dipendente dipendente;
+
+    @ManyToOne
+    @JoinColumn(name = "viaggio_id")
+    private Viaggio viaggio;
 
     private String note;
 

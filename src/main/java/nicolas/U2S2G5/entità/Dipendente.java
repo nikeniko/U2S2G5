@@ -24,7 +24,7 @@ public class Dipendente {
     @Lob
     private byte[] immagineProfilo;
 
-    @OneToMany(mappedBy = "dipendente", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "dipendente_id")
     private List<Prenotazione> prenotazioni;
-
 }

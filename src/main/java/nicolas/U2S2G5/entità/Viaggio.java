@@ -3,7 +3,6 @@ package nicolas.U2S2G5.entità;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 import jakarta.persistence.*;
 import nicolas.U2S2G5.enums.StatoViaggio;
 
@@ -26,7 +25,7 @@ public class Viaggio {
 
     private LocalDate data;
 
-    @OneToMany(mappedBy = "viaggio", cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "viaggio_id")
     private List<Prenotazione> prenotazioni;
-
 }
